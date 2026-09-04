@@ -1,0 +1,25 @@
+[project]
+name = "spring-init"
+version = "0.1.0"
+description = "Interactive Spring Boot project generator from the terminal"
+readme = "README.md"
+authors = [
+    { name = "Abdelbarie Raissouni", email = "rabdlbari@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "questionary>=2.1.1",
+    "requests>=2.34.2",
+    "rich>=15.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/rabdlbari/spring-init"
+Repository = "https://github.com/rabdlbari/spring-init"
+
+[project.scripts]
+spring-init = "spring_init.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.11.18,<0.12.0"]
+build-backend = "uv_build"
